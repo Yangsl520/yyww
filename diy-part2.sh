@@ -22,8 +22,8 @@ sed -i 's/os.date()/os.date("%a %Y-%m-%d %H:%M:%S")/g' package/lean/autocore/fil
 # TTYD 自动登录
 sed -i 's#/bin/login#/bin/login -f root#g' feeds/packages/utils/ttyd/files/ttyd.config
 
-# ddns-go 
-git clone https://github.com/sirpdboy/luci-app-ddns-go.git package/ddns-go
+# NetSpeedTest 网速测试
+git clone https://github.com/sirpdboy/netspeedtest.git package/netspeedtest
 
 # passwall 科学
 git clone -b luci-smartdns-dev --single-branch https://github.com/xiaorouji/openwrt-passwall.git package/luci-app-passwall
